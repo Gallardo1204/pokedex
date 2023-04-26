@@ -1,0 +1,123 @@
+.container {
+  padding: 5rem;
+  background-color: cornflowerblue;
+}
+
+.gallery {
+  display: grid;
+  gap: 3rem 1rem;
+  grid-auto-rows: 22em;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 11rem), 1fr));
+}
+
+.pokemon_card {
+  background-color: #d1d1d1;
+  height: auto;
+
+  .pokemon_titulo {
+    background-color: brown;
+    color: azure;
+  }
+
+  .pokemon_img {
+    max-height: 100%;
+    max-width: 100%;
+    align-content: center;
+    margin: 1em;
+  }
+}
+
+.pokemon_tipo {
+    background-color: rgb(53, 32, 150);
+    border: 3px solid #ffffff;
+    border-radius: 13px;
+    padding: 3px 0px 3px 8px;
+    color: #ffffff;
+    margin: 2px 0px;
+    font-weight: 800;
+    display: block;
+}
+
+.pokemon_normal {
+    background-color: #D19CA9;
+    color: #420917;
+}
+
+.pokemon_lucha {
+    background-color: #F96633;
+}
+
+.pokemon_volador {
+    background-color: #9AB8D2;
+    color: #1b2c3b;
+}
+
+.pokemon_veneno {
+    background-color: #5D2D85;
+}
+
+.pokemon_tierra {
+    background-color: #714C1D;
+}
+
+.pokemon_roca {
+    background-color: #8F3E1E;
+}
+
+.pokemon_bicho {
+    background-color: #3CA252;
+    color: #15321b;
+}
+
+.pokemon_fantasma {
+    background-color: #0B0913;
+}
+
+.pokemon_acero {
+    background-color: #617A6E;
+}
+
+.pokemon_fuego {
+    background-color: #c71421;
+    color: #ffe2e4;
+}
+
+.pokemon_agua {
+    background-color: #82A9FB;
+    color: #0d1d3d;
+}
+
+.pokemon_planta {
+    background-color: #22D74E;
+    color: #0a491a;
+}
+
+.pokemon_electrico {
+    background-color: #FAFF6B;
+    color: #3e3f13;
+}
+
+.pokemon_psiquico {
+    background-color: #FF1893;
+}
+
+.pokemon_hielo {
+    background-color: #D3F7FF;
+}
+
+.pokemon_dragon {
+    background-color: #64D2E6;
+}
+
+.pokemon_siniestro {
+    background-color: #5A597A;
+}
+
+.pokemon_hada {
+    background-color: #F61166;
+}
+
+
+
+/* desconocido
+sombra */

@@ -1,0 +1,47 @@
+<mat-toolbar>
+    <span>POKEDEX</span>
+  </mat-toolbar>
+
+<div class="container">
+    <div class="gallery" >
+        <mat-card class="pokemon_card" *ngFor="let pokemon of pokemones">
+            <mat-card-header class="pokemon_titulo">
+              <mat-card-title>{{ pokemon.nombre | uppercase }}</mat-card-title>
+            </mat-card-header>
+            <img mat-card-image class="pokemon_img" [src]="pokemon.imagen" [alt]="pokemon.nombre">
+            <mat-card-content *ngFor="let tipo of pokemon.tipos">
+                <span [ngClass]="{  'pokemon_tipo': true,
+                                    'pokemon_normal' : tipo == 'normal',
+                                    'pokemon_lucha' : tipo == 'fighting',
+                                    'pokemon_volador' : tipo == 'flying',
+                                    'pokemon_veneno' : tipo == 'poison',
+                                    'pokemon_tierra' : tipo == 'ground',
+                                    'pokemon_roca' : tipo == 'rock',
+                                    'pokemon_bicho' : tipo == 'bug',
+                                    'pokemon_fantasma' : tipo == 'ghost',
+                                    'pokemon_acero' : tipo == 'steel',
+                                    'pokemon_fuego' : tipo == 'fire',
+                                    'pokemon_agua' : tipo == 'water',
+                                    'pokemon_planta' : tipo == 'grass',
+                                    'pokemon_electrico' : tipo == 'electric',
+                                    'pokemon_psiquico' : tipo == 'psychic',
+                                    'pokemon_hielo' : tipo == 'ice',
+                                    'pokemon_dragon' : tipo == 'dragon',
+                                    'pokemon_siniestro' : tipo == 'dark',
+                                    'pokemon_hada' : tipo == 'fairy'
+                                }">
+                    <i class="fa-solid fa-seedling "></i> {{ tipo | titlecase }}
+                </span>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+
+<!-- 
+<mat-paginator [length]="100"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]"
+              aria-label="Select page">
+</mat-paginator> -->
+
+
